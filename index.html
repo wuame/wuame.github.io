@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        /* Body and overall style */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            margin: 0;
+            color: #3D3B30; /* Dark brown color */
+            background-color: #F5F5DC; /* Beige color */
+        }
+
+        /* Left content area */
+        .content {
+            flex: 3;
+            padding: 20px;
+        }
+
+        /* Sidebar for navigation */
+        .sidebar {
+            flex: 1;
+            background-color: #8B4513; /* Brown color */
+            padding: 20px;
+            color: white;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            height: 100vh;
+        }
+
+        /* Style for buttons */
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #A0522D; /* Slightly lighter brown */
+            border-radius: 5px;
+            text-align: center;
+            width: 80%;
+        }
+
+        .sidebar a:hover {
+            background-color: #CD853F; /* Lighter brown for hover */
+        }
+
+        /* Section headings */
+        h1, h2 {
+            color: #8B4513; /* Brown color */
+        }
+
+        /* Content sections */
+        section {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <h2>Navigation</h2>
+        <a href="#about-me">About Me</a>
+        <a href="#competences-skills">Competences & Skills</a>
+        <a href="#projects">Projects</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- About Me Section -->
+        <section id="about-me">
+            <h1>About Me</h1>
+            <p>Hello! I’m a data analyst passionate about transforming raw data into actionable insights. I have experience in Power BI, SQL, and Python, and I’m excited to apply my skills to new challenges.</p>
+        </section>
+
+        <!-- Competences & Skills Section -->
+        <section id="competences-skills">
+            <h2>Competences & Skills</h2>
+            <ul>
+                <li>Data Analysis: Power BI, SQL, Python</li>
+                <li>Data Visualization: Tableau, Power BI</li>
+                <li>Programming Languages: Python, SQL</li>
+                <li>Machine Learning: Scikit-Learn, Pandas, Numpy</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Project 1:</strong> Marketing Dashboard in Power BI (Real-time campaign tracking)</li>
+                <li><strong>Project 2:</strong> Predictive model for cardiovascular risk factors</li>
+                <li><strong>Project 3:</strong> SQL Database Optimization for reporting</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
