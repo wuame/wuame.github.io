@@ -3,25 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+    <title>Curriculum Vitae - Wiame Belbellaj</title>
     <style>
-        /* Body and overall style */
+        /* General Styles */
         body {
             font-family: Arial, sans-serif;
             display: flex;
             margin: 0;
-            color: #3D3B30; /* Dark beige/brown color for text */
+            color: #3D3B30; /* Dark beige for text */
             background-color: #FAF3E0; /* Light beige background */
         }
 
-        /* Left content area */
         .content {
             flex: 3;
             padding: 20px;
-            display: none; /* Hide content sections by default */
+            display: none;
         }
 
-        /* Sidebar for navigation */
         .sidebar {
             flex: 1;
             background-color: #800020; /* Burgundy color */
@@ -34,99 +32,147 @@
             height: 100vh;
         }
 
-        /* Style for buttons */
         .sidebar a {
             display: block;
-            color: #FAF3E0; /* Light beige for button text */
+            color: #FAF3E0; /* Light beige text */
             text-decoration: none;
             margin: 10px 0;
             padding: 12px;
-            background-color: #8B0000; /* Dark burgundy for button background */
-            border: 2px solid #FAF3E0; /* Border matching light beige */
+            background-color: #8B0000; /* Dark burgundy */
+            border: 2px solid #FAF3E0;
             border-radius: 8px;
-            text-align: center;
             width: 80%;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
         }
 
         .sidebar a:hover {
-            background-color: #A52A2A; /* Lighter burgundy on hover */
-            transform: scale(1.05); /* Button grows slightly on hover */
+            background-color: #A52A2A; /* Lighter burgundy */
+            transform: scale(1.05);
             box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
         }
 
-        /* Section headings */
         h1, h2 {
-            color: #800020; /* Burgundy color for headings */
+            color: #800020;
         }
 
-        /* Content sections */
         section {
             margin-bottom: 30px;
         }
 
-        /* Make links in content stand out */
         .content a {
             color: #800020;
             text-decoration: underline;
+        }
+
+        /* Styling for sections */
+        .content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .content ul li {
+            margin-bottom: 10px;
+        }
+
+        .content ul li strong {
+            font-weight: bold;
+        }
+
+        /* Styling for contact and introduction */
+        .intro {
+            font-size: 1.2em;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
     <!-- Sidebar Navigation -->
     <div class="sidebar">
-        <h2>Navigation</h2>
-        <a href="javascript:void(0)" onclick="showContent('about-me')">About Me</a>
-        <a href="javascript:void(0)" onclick="showContent('competences-skills')">Competences & Skills</a>
-        <a href="javascript:void(0)" onclick="showContent('projects')">Projects</a>
+        <h2>Curriculum Vitae</h2>
+        <a href="javascript:void(0)" onclick="showContent('contact')">Contact</a>
+        <a href="javascript:void(0)" onclick="showContent('objectives')">Objectives</a>
+        <a href="javascript:void(0)" onclick="showContent('profile')">Profile</a>
+        <a href="javascript:void(0)" onclick="showContent('education')">Education</a>
+        <a href="javascript:void(0)" onclick="showContent('certifications')">Certifications</a>
+        <a href="javascript:void(0)" onclick="showContent('skills')">Skills</a>
+        <a href="javascript:void(0)" onclick="showContent('research')">Research Experience</a>
+        <a href="javascript:void(0)" onclick="showContent('publications')">Publications</a>
+        <a href="javascript:void(0)" onclick="showContent('presentations')">Presentations</a>
     </div>
 
     <!-- Main Content -->
-    <div class="content" id="about-me">
-        <h1>About Me</h1>
-        <p>Hello! I’m a data analyst passionate about transforming raw data into actionable insights. I have experience in Power BI, SQL, and Python, and I’m excited to apply my skills to new challenges.</p>
+    <div class="content" id="contact">
+        <h1>Contact Information</h1>
+        <p>Phone: (514) 467 3201</p>
+        <p>Email: <a href="mailto:wiame.belbellaj@umontreal.ca">wiame.belbellaj@umontreal.ca</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/wiame-belbellaj-5b46b7304" target="_blank">www.linkedin.com/in/wiame-belbellaj-5b46b7304</a></p>
     </div>
 
-    <div class="content" id="competences-skills">
-        <h2>Competences & Skills</h2>
+    <div class="content" id="objectives">
+        <h1>Objectives</h1>
+        <p>Passionate about technological innovations, particularly in machine learning and artificial intelligence applied to healthcare and biology. I strive to stay updated on the latest trends and advancements in machine learning and data science, aiming to use these technologies to solve complex healthcare problems.</p>
+        <p>With strong academic and practical training in machine learning, data analysis, and bioinformatics, I am determined to join a dynamic team where I can apply my technical skills to develop and deploy predictive models, data analysis pipelines, and bioinformatics tools.</p>
+    </div>
+
+    <div class="content" id="profile">
+        <h1>Personal Profile</h1>
         <ul>
-            <li>Data Analysis: Power BI, SQL, Python</li>
-            <li>Data Visualization: Tableau, Power BI</li>
-            <li>Programming Languages: Python, SQL</li>
-            <li>Machine Learning: Scikit-Learn, Pandas, Numpy</li>
+            <li>Motivated, curious, and diligent.</li>
+            <li>Open-minded with a strong team spirit.</li>
+            <li>Dynamic and innovative.</li>
+            <li>Creative and imaginative.</li>
+            <li>Excellent organizational and time-management skills.</li>
         </ul>
     </div>
 
-    <div class="content" id="projects">
-        <h2>Projects</h2>
+    <div class="content" id="education">
+        <h1>Education</h1>
         <ul>
-            <li><strong>Project 1:</strong> Marketing Dashboard in Power BI (Real-time campaign tracking)</li>
-            <li><strong>Project 2:</strong> Predictive model for cardiovascular risk factors</li>
-            <li><strong>Project 3:</strong> SQL Database Optimization for reporting</li>
+            <li><strong>M.Sc. in Bioinformatics</strong> - Université de Montréal</li>
+            <li><strong>M.Sc. in Bioinformatics and Complex Systems Modeling Applied to Health</strong> - École Nationale Supérieure d’Informatique et d’Analyse des Systèmes, Rabat, Morocco</li>
+            <li><strong>B.Sc. in Mathematical Teaching</strong> - École Normale Supérieure de Casablanca, Morocco</li>
         </ul>
     </div>
 
-    <script>
-        // Function to show content based on the selected section
-        function showContent(sectionId) {
-            // Hide all sections
-            var sections = document.querySelectorAll('.content');
-            sections.forEach(function(section) {
-                section.style.display = 'none';
-            });
+    <div class="content" id="certifications">
+        <h1>Certifications</h1>
+        <ul>
+            <li><strong>Introduction to Bioinformatics (IBT)</strong> - H3ABioNet</li>
+            <li><strong>16S rRNA Microbiome Intermediate Bioinformatics</strong> - H3ABioNet</li>
+        </ul>
+    </div>
 
-            // Show the clicked section
-            var selectedSection = document.getElementById(sectionId);
-            if (selectedSection) {
-                selectedSection.style.display = 'block';
-            }
-        }
+    <div class="content" id="skills">
+        <h1>Technical Skills</h1>
+        <ul>
+            <li><strong>Programming Languages:</strong> Python, R, SQL</li>
+            <li><strong>Data Management:</strong> Database design, management, and querying</li>
+            <li><strong>High-Performance Computing (HPC):</strong> Experience with clusters and cloud environments</li>
+            <li><strong>Machine Learning / Deep Learning:</strong> Model development and optimization with Keras, TensorFlow, Scikit-learn</li>
+            <li><strong>Data Mining:</strong> Feature filtering, dimensionality reduction (PCA, t-SNE), pattern discovery</li>
+            <li><strong>Operating Systems:</strong> Linux, UNIX, Windows</li>
+            <li><strong>Data Visualization:</strong> PowerBI, ggplot2, Matplotlib, Seaborn</li>
+            <li><strong>Bioinformatics Tools:</strong> BLAST, Bioconductor, Biopython, Galaxy, SAMtools, bedtools</li>
+            <li><strong>Sequence Analysis:</strong> Sequence alignment, genome assembly, gene annotation, functional analysis</li>
+            <li><strong>Biological Databases:</strong> NCBI, Ensembl, UniProt, GenBank, PDB, INTERPRO, PROSITE</li>
+        </ul>
+    </div>
 
-        // Show the first section (About Me) by default when the page loads
-        window.onload = function() {
-            showContent('about-me');
-        };
-    </script>
-</body>
-</html>
+    <div class="content" id="research">
+        <h1>Research Experience</h1>
+        <h2>Institut de Cardiologie de Montréal (May 2022 - Present)</h2>
+        <p>Research project on the impact of serum iron levels on cardiovascular and neurodegenerative diseases using bioinformatics approaches: meta-analysis of genome-wide association studies (GWAS), genetic correlation analysis, causal inference using Mendelian randomization, and sex-based stratification.</p>
+        <h2>Institut Pasteur du Maroc (January 2020 - September 2021)</h2>
+        <p>In silico analysis to prioritize SNPs involved in cardiovascular disease pathogenesis based on bioinformatics predictions of deleterious functional effects. Development of machine learning models to predict pathogenicity of amino acid substitutions and benchmarking genomic and proteomic analysis tools.</p>
+    </div>
+
+    <div class="content" id="publications">
+        <h1>Publications</h1>
+        <ul>
+            <li>Belbellaj W, Lona-Durazo F, Bodano C, et al. "The role of genetically predicted serum iron levels on neurodegenerative and cardiovascular traits." (In submission).</li>
+        </ul>
+    </div>
+
+    <div class="content" id="presentations">
+        <h1>Presentations</h
