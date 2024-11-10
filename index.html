@@ -1,208 +1,132 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Curriculum Vitae - WIAME BELBELLAJ</title>
+    <title>My Resume</title>
     <style>
-        /* General Styles */
+        /* Body and overall style */
         body {
             font-family: Arial, sans-serif;
+            display: flex;
             margin: 0;
-            padding: 0;
-            background-color: #f4f7fa;
-            color: #333;
+            color: #3D3B30; /* Dark beige/brown color for text */
+            background-color: #FAF3E0; /* Light beige background */
         }
 
-        .container {
-            width: 85%;
-            margin: 20px auto;
+        /* Left content area */
+        .content {
+            flex: 3;
+            padding: 20px;
+            display: none; /* Hide content sections by default */
         }
 
-        h1, h2, h3, h4 {
-            color: #2d3e50;
-            margin-bottom: 10px;
-        }
-
-        p {
-            line-height: 1.6;
-        }
-
-        .section-title {
-            background-color: #4caf50;
+        /* Sidebar for navigation */
+        .sidebar {
+            flex: 1;
+            background-color: #800020; /* Burgundy color */
+            padding: 20px;
             color: white;
-            padding: 10px;
-            border-radius: 5px;
-            text-transform: uppercase;
-            margin-top: 20px;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            height: 100vh;
         }
 
-        .section-content {
-            padding: 10px;
-            margin-top: 5px;
-            border-left: 3px solid #4caf50;
-            margin-bottom: 20px;
-        }
-
-        .section-content ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        .section-content ul li {
-            margin: 5px 0;
-        }
-
-        .contact-info {
-            background-color: #2d3e50;
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
-
-        .contact-info p {
-            margin: 5px 0;
-        }
-
-        .links a {
-            color: #4caf50;
+        /* Style for buttons */
+        .sidebar a {
+            display: block;
+            color: #FAF3E0; /* Light beige for button text */
             text-decoration: none;
-            margin-right: 10px;
-        }
-
-        .skills ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        .skills ul li {
-            display: inline-block;
-            background-color: #4caf50;
-            color: white;
-            padding: 5px;
-            margin: 5px;
-            border-radius: 5px;
-        }
-
-        .education, .experience, .presentations, .publications {
-            margin-top: 20px;
-        }
-
-        .footer {
+            margin: 10px 0;
+            padding: 12px;
+            background-color: #8B0000; /* Dark burgundy for button background */
+            border: 2px solid #FAF3E0; /* Border matching light beige */
+            border-radius: 8px;
             text-align: center;
-            padding: 10px;
-            background-color: #2d3e50;
-            color: white;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            width: 80%;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .sidebar a:hover {
+            background-color: #A52A2A; /* Lighter burgundy on hover */
+            transform: scale(1.05); /* Button grows slightly on hover */
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Section headings */
+        h1, h2 {
+            color: #800020; /* Burgundy color for headings */
+        }
+
+        /* Content sections */
+        section {
+            margin-bottom: 30px;
+        }
+
+        /* Make links in content stand out */
+        .content a {
+            color: #800020;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <h2>Navigation</h2>
+        <a href="javascript:void(0)" onclick="showContent('about-me')">About Me</a>
+        <a href="javascript:void(0)" onclick="showContent('competences-skills')">Competences & Skills</a>
+        <a href="javascript:void(0)" onclick="showContent('projects')">Projects</a>
+    </div>
 
-    <div class="container">
-        <!-- Contact Information Section -->
-        <div class="contact-info">
-            <h1>WIAME BELBELLAJ</h1>
-            <p>Téléphone: (514) 467 3201</p>
-            <p>Courriel: <a href="mailto:wiame.belbellaj@umontreal.ca">wiame.belbellaj@umontreal.ca</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/wiame-belbellaj-5b46b7304" target="_blank">www.linkedin.com/in/wiame-belbellaj-5b46b7304</a></p>
-        </div>
+    <!-- Main Content -->
+    <div class="content" id="about-me">
+        <h1>About Me</h1>
+        <p>Hello! I’m a data analyst passionate about transforming raw data into actionable insights. I have experience in Power BI, SQL, and Python, and I’m excited to apply my skills to new challenges.</p>
+    </div>
 
-        <!-- Professional Objectives Section -->
-        <div class="section-title">OBJECTIFS PROFESSIONNELS</div>
-        <div class="section-content">
-            <p>
-                Passionnée par les innovations technologiques, en particulier dans le domaine de l’apprentissage automatique et de l’intelligence artificielle appliqués à la santé et à la biologie. Je m’efforce de me tenir à jour sur les dernières tendances et avancées en apprentissage automatique et en sciences des données, avec pour objectif d’utiliser ces technologies pour résoudre des problématiques complexes en soins de santé.
-            </p>
-            <p>
-                Ayant acquis une solide formation académique et pratique en apprentissage automatique, analyse de données et en bio-informatique, je suis déterminée à rejoindre une équipe dynamique où je peux apporter mes compétences techniques en développant et déployant des modèles computationnels prédictifs et personnalisés, des pipelines d’analyse de données et des outils bio-informatiques.
-            </p>
-        </div>
+    <div class="content" id="competences-skills">
+        <h2>Competences & Skills</h2>
+        <ul>
+            <li>Data Analysis: Power BI, SQL, Python</li>
+            <li>Data Visualization: Tableau, Power BI</li>
+            <li>Programming Languages: Python, SQL</li>
+            <li>Machine Learning: Scikit-Learn, Pandas, Numpy</li>
+        </ul>
+    </div>
 
-        <!-- Personal Profile Section -->
-        <div class="section-title">PROFILS PERSONNELS</div>
-        <div class="section-content">
-            <ul>
-                <li>Motivée, curieuse et sérieuse.</li>
-                <li>Ouverte et esprit d’équipe.</li>
-                <li>Dynamique et innovante.</li>
-                <li>Créative et imaginative.</li>
-                <li>Excellentes capacités organisationnelles et de gestion du temps.</li>
-            </ul>
-        </div>
+    <div class="content" id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Project 1:</strong> Marketing Dashboard in Power BI (Real-time campaign tracking)</li>
+            <li><strong>Project 2:</strong> Predictive model for cardiovascular risk factors</li>
+            <li><strong>Project 3:</strong> SQL Database Optimization for reporting</li>
+        </ul>
+    </div>
 
-        <!-- Education Section -->
-        <div class="section-title">FORMATIONS</div>
-        <div class="section-content">
-            <ul>
-                <li>M.Sc. en Bioinformatique – Université de Montréal</li>
-                <li>M.Sc. en Bioinformatique et Modélisation des Systèmes Complexes Appliqués à la Santé - École Nationale Supérieure d’Informatique et d’Analyse des Systèmes, Rabat, Maroc</li>
-                <li>B.Sc. en enseignement mathématique - École Normale Supérieure de Casablanca, Maroc</li>
-            </ul>
-        </div>
+    <script>
+        // Function to show content based on the selected section
+        function showContent(sectionId) {
+            // Hide all sections
+            var sections = document.querySelectorAll('.content');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
 
-        <!-- Certifications Section -->
-        <div class="section-title">FORMATIONS COMPLÉMENTAIRES ET CERTIFICATIONS</div>
-        <div class="section-content">
-            <ul>
-                <li>Introduction to Bioinformatics (IBT) - H3ABioNet</li>
-                <li>16S rRNA Microbiome Intermediate Bioinformatics - H3ABioNet</li>
-            </ul>
-        </div>
+            // Show the clicked section
+            var selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.style.display = 'block';
+            }
+        }
 
-        <!-- Skills Section -->
-        <div class="section-title">COMPÉTENCES TECHNIQUES</div>
-        <div class="section-content">
-            <h4>Langages de programmation</h4>
-            <ul>
-                <li>Python</li>
-                <li>R</li>
-                <li>SQL</li>
-            </ul>
-            <h4>Gestion des bases de données</h4>
-            <ul>
-                <li>Conception, gestion et interrogation de bases de données</li>
-            </ul>
-            <h4>Outils et plateformes</h4>
-            <ul>
-                <li>Keras, Tensorflow, Scikit-learn</li>
-                <li>PowerBI, ggplot2, Matplotlib, Seaborn</li>
-                <li>BLAST, Bioconductor, Biopython, Galaxy</li>
-            </ul>
-        </div>
-
-        <!-- Research Experience Section -->
-        <div class="section-title">EXPÉRIENCE EN RECHERCHE</div>
-        <div class="section-content">
-            <p><strong>Institut de Cardiologie de Montréal, Étudiante en recherche (mai 2022 - présent)</strong></p>
-            <ul>
-                <li>Réalisation d’un projet de recherche sur l’impact du taux de fer dans le sang sur les maladies cardiovasculaires et neurodégénératives en utilisant des approches statistiques et bio-informatique.</li>
-                <li>Méta-analyse des études d’association pangénomiques (GWAS), analyse des corrélations génétiques globales et locales.</li>
-                <li>Inférence causale en utilisant la randomisation mendélienne et stratification des analyses par sexe.</li>
-            </ul>
-            <p><strong>Institut Pasteur du Maroc, Étudiante en recherche (janvier 2020 - septembre 2021)</strong></p>
-            <ul>
-                <li>Réalisation d’analyses in silico visant à prioriser des SNP les plus susceptibles d’être impliqués dans la pathogenèse des maladies cardiovasculaires.</li>
-                <li>Développement des modèles de prédiction de pathogénicité des substitutions d’acide aminé en utilisant l’apprentissage automatique.</li>
-                <li>Benchmarking des outils d’analyse génomique et protéomique pour une évaluation comparative de leur performance.</li>
-            </ul>
-        </div>
-
-        <!-- Scientific Presentations Section -->
-        <div class="section-title">PRÉSENTATIONS SCIENTIFIQUES</div>
-        <div class="section-content">
-            <ul>
-                <li>Belbellaj W, A. Gagliano Taliun S. L’impact du taux de fer dans le sang sur les maladies cardiovasculaires et neurodégénératives. Présentation par affiche à la journée scientifique de l’Institut de Cardiologie de Montréal, 8 juin 2023.</li>
-                <li>Belbellaj W, A. Gagliano Taliun S. L’impact du taux de fer dans le sang sur les maladies cardiovasculaires et neurodégénératives. Présentation orale à la conférence RéseauLab, 22 septembre 2023.</li>
-            </ul>
-        </div>
-
-        <!-- Publication Section -->
-        <div class="section-title">PUBLICATION</div>
-        <div class="section-content">
-            <ul>
-                <li>Belbellaj W, Lona-DurazoF, BodanoC, Bus
+        // Show the first section (About Me) by default when the page loads
+        window.onload = function() {
+            showContent('about-me');
+        };
+    </script>
+</body>
+</html>
