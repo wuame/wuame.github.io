@@ -10,8 +10,8 @@
             font-family: Arial, sans-serif;
             display: flex;
             margin: 0;
-            color: #3D3B30; /* Dark brown color */
-            background-color: #F5F5DC; /* Beige color */
+            color: #3D3B30; /* Dark beige/brown color for text */
+            background-color: #FAF3E0; /* Light beige background */
         }
 
         /* Left content area */
@@ -23,7 +23,7 @@
         /* Sidebar for navigation */
         .sidebar {
             flex: 1;
-            background-color: #8B4513; /* Brown color */
+            background-color: #800020; /* Burgundy color */
             padding: 20px;
             color: white;
             text-align: right;
@@ -36,28 +36,39 @@
         /* Style for buttons */
         .sidebar a {
             display: block;
-            color: white;
+            color: #FAF3E0; /* Light beige for button text */
             text-decoration: none;
             margin: 10px 0;
-            padding: 10px;
-            background-color: #A0522D; /* Slightly lighter brown */
-            border-radius: 5px;
+            padding: 12px;
+            background-color: #8B0000; /* Dark burgundy for button background */
+            border: 2px solid #FAF3E0; /* Border matching light beige */
+            border-radius: 8px;
             text-align: center;
             width: 80%;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
         }
 
         .sidebar a:hover {
-            background-color: #CD853F; /* Lighter brown for hover */
+            background-color: #A52A2A; /* Lighter burgundy on hover */
+            transform: scale(1.05); /* Button grows slightly on hover */
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
         }
 
         /* Section headings */
         h1, h2 {
-            color: #8B4513; /* Brown color */
+            color: #800020; /* Burgundy color for headings */
         }
 
         /* Content sections */
         section {
             margin-bottom: 30px;
+        }
+
+        /* Make links in content stand out */
+        .content a {
+            color: #800020;
+            text-decoration: underline;
         }
     </style>
 </head>
