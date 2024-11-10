@@ -11,7 +11,7 @@
             display: flex;
             margin: 0;
             color: #3D3B30; /* Dark beige/brown color for text */
-            background-color: #FAF3E0; /* Light beige background */
+            background-color: #f9f5f3; /* Light beige background */
         }
 
         /* Left content area */
@@ -21,15 +21,26 @@
             display: none; /* Hide content sections by default */
         }
 
+        .container {
+            display: flex;
+            max-width: 1200px;
+            max-height:100vh;
+            padding: 20px;
+            background-color: #f9f5f3;
+            gap: 40px;
+            flex: 1;
+        }
         /* Sidebar for navigation */
         .sidebar {
+
             flex: 1;
-            background-color: #800020; /* Burgundy color */
+            background-color: #f9f5f3; /* Burgundy color */
             padding: 20px;
-            color: white;
+            color: #f9f5f3;
             text-align: right;
             display: flex;
             flex-direction: column;
+
             align-items: flex-end;
             height: 100vh;
         }
@@ -37,28 +48,77 @@
         /* Style for buttons */
         .sidebar a {
             display: block;
-            color: #FAF3E0; /* Light beige for button text */
+            color: #5e5343; /* Light beige for button text */
             text-decoration: none;
             margin: 10px 0;
             padding: 12px;
-            background-color: #8B0000; /* Dark burgundy for button background */
-            border: 2px solid #FAF3E0; /* Border matching light beige */
+            background-color: #dfa196; /* Dark burgundy for button background */
+            border: 2px solid #dfa196;; /* Border matching light beige */
             border-radius: 8px;
             text-align: center;
             width: 80%;
             transition: background-color 0.3s ease, transform 0.3s ease;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
         }
+        .first-column {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            flex-direction:column;
+            justify-content: center;
+        }
+
+        .image {
+         max-width: 100%;
+         max-height: 100vh;
+          height: auto;
+         border-radius: 5px;
+        }
+
+    /* Second Column - Description */
+        .second-column {
+          flex: 1;
+         display: flex;
+         align-items: center;
+         
+         justify-content: center;
+        }
+
+        .name {
+         font-family: 'Hatton', serif;
+        font-size: 65px;
+        font-weight: bold;
+        font-style: italic;
+        margin: 0;
+        }
+
+        .intro {
+         font-size: 18px;
+         margin-top: 10px;
+         line-height: 1.6;
+         color: #5e5343;
+         max-width: 400px;
+        }
+
+    /* Third Column - Buttons aligned to the far right */
+        .third-column {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-end;
+          padding-right: 18px;
+        }
 
         .sidebar a:hover {
-            background-color: #A52A2A; /* Lighter burgundy on hover */
+            background-color: #f9f5f3; /* Lighter burgundy on hover */
             transform: scale(1.05); /* Button grows slightly on hover */
             box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
         }
 
         /* Section headings */
         h1, h2 {
-            color: #800020; /* Burgundy color for headings */
+            color: #5e5343; /* Burgundy color for headings */
         }
 
         /* Content sections */
@@ -71,38 +131,98 @@
             color: #800020;
             text-decoration: underline;
         }
+
+        li {
+           margin-bottom: 10px; /* Add space between list items */
+           line-height: 1.6; /* Increase line height for readability */
+        }
     </style>
 </head>
 <body>
     <!-- Sidebar Navigation -->
     <div class="sidebar">
-        <h2>Navigation</h2>
-        <a href="javascript:void(0)" onclick="showContent('about-me')">About Me</a>
-        <a href="javascript:void(0)" onclick="showContent('competences-skills')">Competences & Skills</a>
-        <a href="javascript:void(0)" onclick="showContent('projects')">Projects</a>
-        <a href="javascript:void(0)" onclick="showContent('experiences-research')">Experiences in Research</a>
-        <a href="javascript:void(0)" onclick="showContent('scientific-presentations')">Scientific Presentations</a>
+        <br>
+        <br>
+        <a href="javascript:void(0)" onclick="showContent('Home')">Home</a><br>
+        <a href="javascript:void(0)" onclick="showContent('about-me')">About Me</a><br>
+        <a href="javascript:void(0)" onclick="showContent('competences-skills')">Competences & Skills</a><br>
+        <a href="javascript:void(0)" onclick="showContent('projects')">Projects</a><br>
+        <a href="javascript:void(0)" onclick="showContent('experiences-research')">Experiences in Research</a><br>
+        <a href="javascript:void(0)" onclick="showContent('scientific-presentations')">Scientific Presentations</a><br>
         <a href="javascript:void(0)" onclick="showContent('publications')">Publications</a>
     </div>
 
     <!-- Main Content -->
+    <div class="content" id="Home">
+        <div class="container">
+            <div class="first-column">
+                <h1 class="name">Wiame Belbellaj </h1><br>
+                <p class="intro">Hello! I’m a data analyst passionate about transforming raw data into actionable insights. I have experience in Power BI, SQL, and Python, and I’m excited to apply my skills to new challenges.</p>
+              </div>
+            <div class="second-column">
+              <img src="C:\Users\wuaam\Downloads\flower.jpg" alt="Flower Image" class="image">
+            </div>
+            
+          </div>
+    </div>
+
+
     <div class="content" id="about-me">
+        <br>
+        <br>
         <h1>About Me</h1>
-        <p>Hello! I’m a data analyst passionate about transforming raw data into actionable insights. I have experience in Power BI, SQL, and Python, and I’m excited to apply my skills to new challenges.</p>
+        <p> <br> <li>Passionate about technological innovations, particularly in the field of data analysis, artifial intellignece and bioinformatics, I 
+            regularly pursue further training.  <br> <br></li> 
+            <li>My motivation is to leverage advancements in 
+                computing to serve biology and healthcare systems by adopting concrete 
+                solutions to help provide tangible answers to medical challenges, while 
+                contributing to the improvement of medical approaches towards greater 
+                efficiency and personalization. <br><br> </li>
+
+           <li> Having acquired a solid academic and practical background in machine learning, 
+            data analysis and bioinformatics, I am determined to join a dynamic team where I 
+            can contribute my technical skills in developing and deploying predictive and 
+            personalized computational models, data analysis pipelines and bioinformatics 
+            tools.<br><br></li> 
+            <li> <strong>E-mail : wiame.belbellaj@umontreal.ca</strong></li>
+        <li> <strong>Phone : +1 (514) 467 3201</strong></li>
+        <li><strong>LinkdIn : </strong><a href="https://www.linkedin.com/in/wiame-belbellaj-5b46b7304/" target="_blank">Wiame Belbellaj</a></li>
+        
+        </p>
     </div>
 
     <div class="content" id="competences-skills">
-        <h2>Competences & Skills</h2>
+        <br>
+        <br>
+        <h1>Competences & Skills</h1>
         <ul>
-            <li>Data Analysis: Power BI, SQL, Python</li>
-            <li>Data Visualization: Tableau, Power BI</li>
-            <li>Programming Languages: Python, SQL</li>
-            <li>Machine Learning: Scikit-Learn, Pandas, Numpy</li>
+            <li><strong>Programming Languages:</strong> Python, R, SQL. </li>
+            <li>Machine / Deep learning model development and optimization: 
+                Tensorflow, Scikit-learn, Keras, PyTorch.</li>
+            <li><strong>Data analysis and Visualization:</strong> Power BI, Pandas, Numpy, ggplot2, Matplotlib, 
+                Seaborn. </li>
+            <li><strong>Data mining: </strong>extracting actionable information from large quantities of 
+                data: the filtering, dimension reduction (PCA, t-SNE), and hidden pattern 
+                discovery. </li>
+            <li><strong> Database Management:</strong>  Design, management and querying.</li>
+            <li><strong>Bioinformatics Tools:</strong> BLAST, Bioconductor, Biopython, Galaxy, SAMtools, 
+                bedtools.</li>
+            <li><strong>Sequence Analysis:</strong> Sequence alignment, genome assembly, gene 
+                annotation, functional analysis. </li>
+            <li><strong>Biological Databases:</strong> NCBI, Ensembl, UniProt, GenBank, PDB, INTERPRO, 
+                PROSITE. </li>
+            <li><strong>High-Performance Computing (HPC) environments:</strong> experience with 
+                clusters and cloud environment for massive data processing and analysis.  </li>
+            <li><strong>Office 365 Suite:</strong> Excel, Word, PowerPoint, Outlook, OneDrive, SharePoint 
+                online et Teams.</li>
+            <li><strong>Operating Systems: </strong>Linux, UNIX, Windows.</li>
         </ul>
     </div>
 
     <div class="content" id="projects">
-        <h2>Projects</h2>
+        <br>
+        <br>
+        <h1>Projects</h1>
         <ul>
             <li><strong>Project 1:</strong> Marketing Dashboard in Power BI (Real-time campaign tracking)</li>
             <li><strong>Project 2:</strong> Predictive model for cardiovascular risk factors</li>
@@ -111,16 +231,18 @@
     </div>
 
     <div class="content" id="experiences-research">
-        <h2>Experiences in Research</h2>
+        <br>
+        <br>
+        <h1>Experiences in Research</h1>
         <p><strong>Institut de Cardiologie de Montréal, Research Intern (May 2022 - July 2024)</strong></p>
         <ul>
             <li>Conducted a research project on the impact of blood iron levels on cardiovascular and neurodegenerative diseases using statistical and bioinformatics approaches.</li>
-            <li>Performed meta-analysis of genome-wide association studies (GWAS), genetic correlation analysis, and Mendelian randomization.</li>
+            <li>Performed meta-analysis of genome-wide association studies (GWAS), genetic correlation analysis, and Mendelian randomization.</li><br>
         </ul>
         <p><strong>Institut Pasteur, Research Intern (January 2020 - September 2021)</strong></p>
         <ul>
             <li>Conducted in-silico analyses to prioritize SNPs involved in the pathogenesis of cardiovascular diseases.</li>
-            <li>Developed machine learning models for predicting pathogenic amino acid substitutions.</li>
+            <li>Developed machine learning models for predicting pathogenic amino acid substitutions.</li><br>
         </ul>
         <p><strong>Lycée Ibn el Yassamine, Teaching Intern (January 2019 - June 2019)</strong></p>
         <ul>
@@ -130,20 +252,24 @@
     </div>
 
     <div class="content" id="scientific-presentations">
-        <h2>Scientific Presentations</h2>
+        <br>
+        <br>
+        <h1>Scientific Presentations</h1><br>
         <ul>
-            <li>Belbellaj W, A. Gagliano Taliun S. The impact of blood iron levels on cardiovascular and neurodegenerative diseases. Poster presentation at the scientific day of the Montreal Heart Institute, June 8, 2023. \n </li>
-            <li>Belbellaj W, A. Gagliano Taliun S. The impact of blood iron levels on cardiovascular and neurodegenerative diseases. Oral presentation at the RéseauLab conference, September 22, 2023. \n </li>
-            <li>Belbellaj W, A. Gagliano Taliun S. The impact of blood iron levels on cardiovascular and neurodegenerative diseases. Oral presentation at the Friday Seminar, Montreal Heart Institute, December 1, 2023. \n </li>
-            <li>Belbellaj W, A. Gagliano Taliun S. The impact of blood iron levels on cardiovascular and neurodegenerative diseases. Poster presentation at the World Congress of Psychiatric Genetics (WCPG), October 10-14, 2023. \n </li>
+            <li>Belbellaj W, A. Gagliano Taliun S. The impact of blood iron levels on cardiovascular and neurodegenerative diseases. Poster presentation at the scientific day of the Montreal Heart Institute, June 8, 2023. </li><br>
+            <li>Belbellaj W, A. Gagliano Taliun S. The impact of blood iron levels on cardiovascular and neurodegenerative diseases. Oral presentation at the RéseauLab conference, September 22, 2023. </li><br>
+            <li>Belbellaj W, A. Gagliano Taliun S. The impact of blood iron levels on cardiovascular and neurodegenerative diseases. Oral presentation at the Friday Seminar, Montreal Heart Institute, December 1, 2023. </li><br>
+            <li>Belbellaj W, A. Gagliano Taliun S. The impact of blood iron levels on cardiovascular and neurodegenerative diseases. Poster presentation at the World Congress of Psychiatric Genetics (WCPG), October 10-14, 2023.  </li><br>
             <li>Belbellaj W, A. Gagliano Taliun S. The impact of blood iron levels on cardiovascular and neurodegenerative diseases. Oral presentation at the 6th Neuroscience Scientific Day, April 23, 2024.</li>
         </ul>
     </div>
 
     <div class="content" id="publications">
-        <h2>Publications</h2>
+        <br>
+        <br>
+        <h1>Publications</h1>
         <ul>
-            <li>Belbellaj, W., Lona-Durazo, F., Bodano, C. et al. The role of genetically predicted serum iron levels on neurodegenerative and cardiovascular traits. Sci Rep 14, 24588 (2024). https://doi.org/10.1038/s41598-024-76245-9.  .</li>
+            <li>Belbellaj, W., Lona-Durazo, F., Bodano, C. et al. The role of genetically predicted serum iron levels on neurodegenerative and cardiovascular traits. Sci Rep 14, 24588 (2024).<a href="https://doi.org/10.1038/s41598-024-76245-9" target="_blank">https://doi.org/10.1038/s41598-024-76245-9</a> </li>
         </ul>
     </div>
 
@@ -165,7 +291,7 @@
 
         // Show the first section (About Me) by default when the page loads
         window.onload = function() {
-            showContent('about-me');
+            showContent('Home');
         };
     </script>
 </body>
