@@ -1,178 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae - Wiame Belbellaj</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curriculum Vitae - WIAME BELBELLAJ</title>
     <style>
         /* General Styles */
         body {
             font-family: Arial, sans-serif;
-            display: flex;
             margin: 0;
-            color: #3D3B30; /* Dark beige for text */
-            background-color: #FAF3E0; /* Light beige background */
-        }
-
-        .content {
-            flex: 3;
-            padding: 20px;
-            display: none;
-        }
-
-        .sidebar {
-            flex: 1;
-            background-color: #800020; /* Burgundy color */
-            padding: 20px;
-            color: white;
-            text-align: right;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            height: 100vh;
-        }
-
-        .sidebar a {
-            display: block;
-            color: #FAF3E0; /* Light beige text */
-            text-decoration: none;
-            margin: 10px 0;
-            padding: 12px;
-            background-color: #8B0000; /* Dark burgundy */
-            border: 2px solid #FAF3E0;
-            border-radius: 8px;
-            width: 80%;
-            text-align: center;
-            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-        }
-
-        .sidebar a:hover {
-            background-color: #A52A2A; /* Lighter burgundy */
-            transform: scale(1.05);
-            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
-        }
-
-        h1, h2 {
-            color: #800020;
-        }
-
-        section {
-            margin-bottom: 30px;
-        }
-
-        .content a {
-            color: #800020;
-            text-decoration: underline;
-        }
-
-        /* Styling for sections */
-        .content ul {
-            list-style-type: none;
             padding: 0;
+            background-color: #f4f7fa;
+            color: #333;
         }
 
-        .content ul li {
+        .container {
+            width: 85%;
+            margin: 20px auto;
+        }
+
+        h1, h2, h3, h4 {
+            color: #2d3e50;
             margin-bottom: 10px;
         }
 
-        .content ul li strong {
-            font-weight: bold;
+        p {
+            line-height: 1.6;
         }
 
-        /* Styling for contact and introduction */
-        .intro {
-            font-size: 1.2em;
+        .section-title {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            margin-top: 20px;
+        }
+
+        .section-content {
+            padding: 10px;
+            margin-top: 5px;
+            border-left: 3px solid #4caf50;
             margin-bottom: 20px;
+        }
+
+        .section-content ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .section-content ul li {
+            margin: 5px 0;
+        }
+
+        .contact-info {
+            background-color: #2d3e50;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .links a {
+            color: #4caf50;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .skills ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .skills ul li {
+            display: inline-block;
+            background-color: #4caf50;
+            color: white;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        .education, .experience, .presentations, .publications {
+            margin-top: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2d3e50;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
-    <!-- Sidebar Navigation -->
-    <div class="sidebar">
-        <h2>Curriculum Vitae</h2>
-        <a href="javascript:void(0)" onclick="showContent('contact')">Contact</a>
-        <a href="javascript:void(0)" onclick="showContent('objectives')">Objectives</a>
-        <a href="javascript:void(0)" onclick="showContent('profile')">Profile</a>
-        <a href="javascript:void(0)" onclick="showContent('education')">Education</a>
-        <a href="javascript:void(0)" onclick="showContent('certifications')">Certifications</a>
-        <a href="javascript:void(0)" onclick="showContent('skills')">Skills</a>
-        <a href="javascript:void(0)" onclick="showContent('research')">Research Experience</a>
-        <a href="javascript:void(0)" onclick="showContent('publications')">Publications</a>
-        <a href="javascript:void(0)" onclick="showContent('presentations')">Presentations</a>
-    </div>
 
-    <!-- Main Content -->
-    <div class="content" id="contact">
-        <h1>Contact Information</h1>
-        <p>Phone: (514) 467 3201</p>
-        <p>Email: <a href="mailto:wiame.belbellaj@umontreal.ca">wiame.belbellaj@umontreal.ca</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/wiame-belbellaj-5b46b7304" target="_blank">www.linkedin.com/in/wiame-belbellaj-5b46b7304</a></p>
-    </div>
+    <div class="container">
+        <!-- Contact Information Section -->
+        <div class="contact-info">
+            <h1>WIAME BELBELLAJ</h1>
+            <p>Téléphone: (514) 467 3201</p>
+            <p>Courriel: <a href="mailto:wiame.belbellaj@umontreal.ca">wiame.belbellaj@umontreal.ca</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/wiame-belbellaj-5b46b7304" target="_blank">www.linkedin.com/in/wiame-belbellaj-5b46b7304</a></p>
+        </div>
 
-    <div class="content" id="objectives">
-        <h1>Objectives</h1>
-        <p>Passionate about technological innovations, particularly in machine learning and artificial intelligence applied to healthcare and biology. I strive to stay updated on the latest trends and advancements in machine learning and data science, aiming to use these technologies to solve complex healthcare problems.</p>
-        <p>With strong academic and practical training in machine learning, data analysis, and bioinformatics, I am determined to join a dynamic team where I can apply my technical skills to develop and deploy predictive models, data analysis pipelines, and bioinformatics tools.</p>
-    </div>
+        <!-- Professional Objectives Section -->
+        <div class="section-title">OBJECTIFS PROFESSIONNELS</div>
+        <div class="section-content">
+            <p>
+                Passionnée par les innovations technologiques, en particulier dans le domaine de l’apprentissage automatique et de l’intelligence artificielle appliqués à la santé et à la biologie. Je m’efforce de me tenir à jour sur les dernières tendances et avancées en apprentissage automatique et en sciences des données, avec pour objectif d’utiliser ces technologies pour résoudre des problématiques complexes en soins de santé.
+            </p>
+            <p>
+                Ayant acquis une solide formation académique et pratique en apprentissage automatique, analyse de données et en bio-informatique, je suis déterminée à rejoindre une équipe dynamique où je peux apporter mes compétences techniques en développant et déployant des modèles computationnels prédictifs et personnalisés, des pipelines d’analyse de données et des outils bio-informatiques.
+            </p>
+        </div>
 
-    <div class="content" id="profile">
-        <h1>Personal Profile</h1>
-        <ul>
-            <li>Motivated, curious, and diligent.</li>
-            <li>Open-minded with a strong team spirit.</li>
-            <li>Dynamic and innovative.</li>
-            <li>Creative and imaginative.</li>
-            <li>Excellent organizational and time-management skills.</li>
-        </ul>
-    </div>
+        <!-- Personal Profile Section -->
+        <div class="section-title">PROFILS PERSONNELS</div>
+        <div class="section-content">
+            <ul>
+                <li>Motivée, curieuse et sérieuse.</li>
+                <li>Ouverte et esprit d’équipe.</li>
+                <li>Dynamique et innovante.</li>
+                <li>Créative et imaginative.</li>
+                <li>Excellentes capacités organisationnelles et de gestion du temps.</li>
+            </ul>
+        </div>
 
-    <div class="content" id="education">
-        <h1>Education</h1>
-        <ul>
-            <li><strong>M.Sc. in Bioinformatics</strong> - Université de Montréal</li>
-            <li><strong>M.Sc. in Bioinformatics and Complex Systems Modeling Applied to Health</strong> - École Nationale Supérieure d’Informatique et d’Analyse des Systèmes, Rabat, Morocco</li>
-            <li><strong>B.Sc. in Mathematical Teaching</strong> - École Normale Supérieure de Casablanca, Morocco</li>
-        </ul>
-    </div>
+        <!-- Education Section -->
+        <div class="section-title">FORMATIONS</div>
+        <div class="section-content">
+            <ul>
+                <li>M.Sc. en Bioinformatique – Université de Montréal</li>
+                <li>M.Sc. en Bioinformatique et Modélisation des Systèmes Complexes Appliqués à la Santé - École Nationale Supérieure d’Informatique et d’Analyse des Systèmes, Rabat, Maroc</li>
+                <li>B.Sc. en enseignement mathématique - École Normale Supérieure de Casablanca, Maroc</li>
+            </ul>
+        </div>
 
-    <div class="content" id="certifications">
-        <h1>Certifications</h1>
-        <ul>
-            <li><strong>Introduction to Bioinformatics (IBT)</strong> - H3ABioNet</li>
-            <li><strong>16S rRNA Microbiome Intermediate Bioinformatics</strong> - H3ABioNet</li>
-        </ul>
-    </div>
+        <!-- Certifications Section -->
+        <div class="section-title">FORMATIONS COMPLÉMENTAIRES ET CERTIFICATIONS</div>
+        <div class="section-content">
+            <ul>
+                <li>Introduction to Bioinformatics (IBT) - H3ABioNet</li>
+                <li>16S rRNA Microbiome Intermediate Bioinformatics - H3ABioNet</li>
+            </ul>
+        </div>
 
-    <div class="content" id="skills">
-        <h1>Technical Skills</h1>
-        <ul>
-            <li><strong>Programming Languages:</strong> Python, R, SQL</li>
-            <li><strong>Data Management:</strong> Database design, management, and querying</li>
-            <li><strong>High-Performance Computing (HPC):</strong> Experience with clusters and cloud environments</li>
-            <li><strong>Machine Learning / Deep Learning:</strong> Model development and optimization with Keras, TensorFlow, Scikit-learn</li>
-            <li><strong>Data Mining:</strong> Feature filtering, dimensionality reduction (PCA, t-SNE), pattern discovery</li>
-            <li><strong>Operating Systems:</strong> Linux, UNIX, Windows</li>
-            <li><strong>Data Visualization:</strong> PowerBI, ggplot2, Matplotlib, Seaborn</li>
-            <li><strong>Bioinformatics Tools:</strong> BLAST, Bioconductor, Biopython, Galaxy, SAMtools, bedtools</li>
-            <li><strong>Sequence Analysis:</strong> Sequence alignment, genome assembly, gene annotation, functional analysis</li>
-            <li><strong>Biological Databases:</strong> NCBI, Ensembl, UniProt, GenBank, PDB, INTERPRO, PROSITE</li>
-        </ul>
-    </div>
+        <!-- Skills Section -->
+        <div class="section-title">COMPÉTENCES TECHNIQUES</div>
+        <div class="section-content">
+            <h4>Langages de programmation</h4>
+            <ul>
+                <li>Python</li>
+                <li>R</li>
+                <li>SQL</li>
+            </ul>
+            <h4>Gestion des bases de données</h4>
+            <ul>
+                <li>Conception, gestion et interrogation de bases de données</li>
+            </ul>
+            <h4>Outils et plateformes</h4>
+            <ul>
+                <li>Keras, Tensorflow, Scikit-learn</li>
+                <li>PowerBI, ggplot2, Matplotlib, Seaborn</li>
+                <li>BLAST, Bioconductor, Biopython, Galaxy</li>
+            </ul>
+        </div>
 
-    <div class="content" id="research">
-        <h1>Research Experience</h1>
-        <h2>Institut de Cardiologie de Montréal (May 2022 - Present)</h2>
-        <p>Research project on the impact of serum iron levels on cardiovascular and neurodegenerative diseases using bioinformatics approaches: meta-analysis of genome-wide association studies (GWAS), genetic correlation analysis, causal inference using Mendelian randomization, and sex-based stratification.</p>
-        <h2>Institut Pasteur du Maroc (January 2020 - September 2021)</h2>
-        <p>In silico analysis to prioritize SNPs involved in cardiovascular disease pathogenesis based on bioinformatics predictions of deleterious functional effects. Development of machine learning models to predict pathogenicity of amino acid substitutions and benchmarking genomic and proteomic analysis tools.</p>
-    </div>
+        <!-- Research Experience Section -->
+        <div class="section-title">EXPÉRIENCE EN RECHERCHE</div>
+        <div class="section-content">
+            <p><strong>Institut de Cardiologie de Montréal, Étudiante en recherche (mai 2022 - présent)</strong></p>
+            <ul>
+                <li>Réalisation d’un projet de recherche sur l’impact du taux de fer dans le sang sur les maladies cardiovasculaires et neurodégénératives en utilisant des approches statistiques et bio-informatique.</li>
+                <li>Méta-analyse des études d’association pangénomiques (GWAS), analyse des corrélations génétiques globales et locales.</li>
+                <li>Inférence causale en utilisant la randomisation mendélienne et stratification des analyses par sexe.</li>
+            </ul>
+            <p><strong>Institut Pasteur du Maroc, Étudiante en recherche (janvier 2020 - septembre 2021)</strong></p>
+            <ul>
+                <li>Réalisation d’analyses in silico visant à prioriser des SNP les plus susceptibles d’être impliqués dans la pathogenèse des maladies cardiovasculaires.</li>
+                <li>Développement des modèles de prédiction de pathogénicité des substitutions d’acide aminé en utilisant l’apprentissage automatique.</li>
+                <li>Benchmarking des outils d’analyse génomique et protéomique pour une évaluation comparative de leur performance.</li>
+            </ul>
+        </div>
 
-    <div class="content" id="publications">
-        <h1>Publications</h1>
-        <ul>
-            <li>Belbellaj W, Lona-Durazo F, Bodano C, et al. "The role of genetically predicted serum iron levels on neurodegenerative and cardiovascular traits." (In submission).</li>
-        </ul>
-    </div>
+        <!-- Scientific Presentations Section -->
+        <div class="section-title">PRÉSENTATIONS SCIENTIFIQUES</div>
+        <div class="section-content">
+            <ul>
+                <li>Belbellaj W, A. Gagliano Taliun S. L’impact du taux de fer dans le sang sur les maladies cardiovasculaires et neurodégénératives. Présentation par affiche à la journée scientifique de l’Institut de Cardiologie de Montréal, 8 juin 2023.</li>
+                <li>Belbellaj W, A. Gagliano Taliun S. L’impact du taux de fer dans le sang sur les maladies cardiovasculaires et neurodégénératives. Présentation orale à la conférence RéseauLab, 22 septembre 2023.</li>
+            </ul>
+        </div>
 
-    <div class="content" id="presentations">
-        <h1>Presentations</h
+        <!-- Publication Section -->
+        <div class="section-title">PUBLICATION</div>
+        <div class="section-content">
+            <ul>
+                <li>Belbellaj W, Lona-DurazoF, BodanoC, Bus
